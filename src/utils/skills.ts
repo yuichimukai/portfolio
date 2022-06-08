@@ -1,0 +1,20 @@
+export const skills = [
+  "JavaScript",
+  "TypeScript",
+  "PHP",
+  "React",
+  "Vue",
+  "Angular",
+  "jQuery",
+  "ReactiveX",
+  "Next",
+  "Nuxt",
+  "Laravel",
+  "Webpack",
+  "Slack",
+  "GitHub",
+  "GitLab",
+  "Vercel",
+  "Storybook",
+  "Docker"
+] as const;

@@ -1,0 +1,37 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "inline-react-svg",
+    ["styled-components", {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+    }],
+    ["prismjs", {
+      "languages": [
+        "javascript",
+        "css",
+        "markup",
+        "bash",
+        "diff",
+        "go",
+        "graphql",
+        "json",
+        "markdown",
+        "php",
+        "python",
+        "jsx",
+        "tsx",
+        "regex",
+        "sql",
+        "typescript",
+        "ejs"
+      ],
+      "plugins": ["line-numbers"],
+      "theme": "tomorrow",
+      "css": true
+    }]
+  ]
+}

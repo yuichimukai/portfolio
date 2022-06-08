@@ -1,0 +1,61 @@
+import posts from '../../.contents/posts.json'
+import { NextPage } from 'next';
+import { createOgpUrl } from '@/utils';
+import { Meta } from '@/components/Meta';
+import { BrowserWindow } from '@/components/BrowserWindow';
+import { SkillIconList } from '@/components/SkillIconList';
+import { ExternalPostList } from '@/components/ExternalPostList'
+import { Footer } from '@/components/Footer';
+import { BasicLayout } from '@/components/layouts/BasicLayout';
+import { ContentSection, SectionTitle, PlainText, PageTitle } from '@/styles/utils/common';
+
+type Props = {}
+
+const Home: NextPage<Props> = (props) => {
+  const defaultOgpUrl  = createOgpUrl('Top - About me')
+  return (
+    <BasicLayout>
+      <Meta
+        title={''}
+        description={'Yuichi Mukai - Web Dev'}
+        image={defaultOgpUrl}
+        favicon="👋"
+      />
+      <BrowserWindow>
+        <PageTitle>Hello, World 👋</PageTitle>
+        <ContentSection>
+          <SectionTitle>Profile</SectionTitle>
+          <PlainText>Hi, I'm Yuichi Mukai, a junior web engineer interested in frontend development and web design.</PlainText>
+          <PlainText>I belong to the Faculty of Economics of Tohoku University.</PlainText>
+        </ContentSection>
+        <ContentSection>
+          <SectionTitle>Experience</SectionTitle>
+          <PlainText>2021.8 Worked at medpeer, as intern</PlainText>
+          <PlainText>2021.3〜5 Worked at weseek.inc, as a part time job</PlainText>
+        </ContentSection>
+        <ContentSection>
+          <SectionTitle>Language・Tools</SectionTitle>
+          <SkillIconList
+            names={[
+              'JavaScript',
+              'TypeScript',
+              'ReactiveX',
+              'Vue',
+              'React',
+              'Next',
+              'Webpack',
+              'Storybook',
+            ]}
+          />
+        </ContentSection>
+        {/* <ContentSection> */}
+          {/* <SectionTitle>Recent activities</SectionTitle>
+          <ExternalPostList posts={posts}/>
+        </ContentSection> */}
+      </BrowserWindow>
+      <Footer/>
+    </BasicLayout>
+  )
+}
+
+export default Home
