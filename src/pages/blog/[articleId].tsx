@@ -64,11 +64,11 @@ const articleId: NextPage<Props> = (props: Props) => {
               <Link href={`/blog/categories/${article.category?.id}/page/1`}>
                 <DetailPageCategory>{article.category?.name}</DetailPageCategory>
               </Link>
-              {/* <DetailPageTags>
+              <DetailPageTags>
                 {article.tags.map(tag => (
                   <DetailPageTag key={tag?.id}>#{tag?.name}</DetailPageTag>
                 ))}
-              </DetailPageTags> */}
+              </DetailPageTags>
                 <DetailPageDate>
                   <ClockIcon fill="var(--colors-gray)"/>
                   <DetailPageDateText>

@@ -20,11 +20,11 @@ export const ArticleCard: React.VFC<Props> = (props) => {
         <ArticleTitle>{ article.title }</ArticleTitle>
         <ArticleMetaData>
           <ArticleCategory>{article.category.name}</ArticleCategory>
-          {/* <ArticleTags>
+          <ArticleTags>
             {article.tags.map(tag => (
               <ArticleTag key={tag.id}>#{tag.name}</ArticleTag>
             ))}
-          </ArticleTags> */}
+          </ArticleTags>
           <ArticleDate>
             <ClockIcon fill="var(--colors-gray)"/>
             <ArticleDateText>
