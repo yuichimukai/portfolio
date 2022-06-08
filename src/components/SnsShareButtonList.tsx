@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { TwitterShareButton } from './TwitterShareButton'
-import { FacebookShareButton } from './FacebookShareButton'
 
 type Props = {
   articleId: string
@@ -12,9 +11,6 @@ export const SnsShareButtonList: React.VFC<Props> = (props) => {
     <ShareButtonListBase>
       <ShareButtonListItem>
         <TwitterShareButton articleId={articleId}/>
-      </ShareButtonListItem>
-      <ShareButtonListItem>
-        <FacebookShareButton articleId={articleId}/>
       </ShareButtonListItem>
     </ShareButtonListBase>
   )

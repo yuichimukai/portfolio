@@ -25,8 +25,8 @@ const Home: NextPage<Props> = (props) => {
         <PageTitle>Hello, World 👋</PageTitle>
         <ContentSection>
           <SectionTitle>Profile</SectionTitle>
-          <PlainText>Hi, I'm Yuichi Mukai, a junior web engineer interested in frontend development and web design.</PlainText>
-          <PlainText>I belong to the Faculty of Economics of Tohoku University.</PlainText>
+          <PlainText>Hi, I'm Yuichi Mukai, a junior web engineer interested in backend development and DevOps.</PlainText>
+          <PlainText>I belong to the Faculty of Agriculture of Meiji University.</PlainText>
         </ContentSection>
         <ContentSection>
           <SectionTitle>Experience</SectionTitle>
@@ -37,14 +37,12 @@ const Home: NextPage<Props> = (props) => {
           <SectionTitle>Language・Tools</SectionTitle>
           <SkillIconList
             names={[
+              'Ruby',
+              'Rails',
               'JavaScript',
               'TypeScript',
-              'ReactiveX',
-              'Vue',
               'React',
-              'Next',
-              'Webpack',
-              'Storybook',
+              'Next'
             ]}
           />
         </ContentSection>

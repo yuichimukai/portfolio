@@ -12,7 +12,6 @@ export * from './SkillIconList'
 export * from './ToggleSwitch'
 export * from './SideBar'
 export * from './TwitterShareButton'
-export * from './FacebookShareButton'
 export * from './SnsShareButtonList'
 export * from "./Header";
 export * from "./Meta";
