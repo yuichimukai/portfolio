@@ -41,7 +41,7 @@ async function getFeedItemsFromSources(sources: undefined | string[]) {
   } catch (error) {}
 }
 
-const ZENN_RSS = "https://zenn.dev/co9xs/feed"
+const ZENN_RSS = "https://zenn.dev/yuichi_m/feed"
 
 ;(async function () {
   const items = (await getFeedItemsFromSources([ZENN_RSS])) ?? []
