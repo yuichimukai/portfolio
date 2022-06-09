@@ -8,11 +8,11 @@ export const BrowserWindow: React.VFC<Props> = (props) => {
   const { children } = props
   return (
     <PageWindowBase>
-      <PageWindowTopBar>
-        <TopBarDammyButton color="var(--colors-red)"/>
+      {/* <PageWindowTopBar> */}
+        {/* <TopBarDammyButton color="var(--colors-red)"/>
         <TopBarDammyButton color="var(--colors-yellow)"/>
-        <TopBarDammyButton color="var(--colors-light-green)"/>
-      </PageWindowTopBar>
+        <TopBarDammyButton color="var(--colors-light-green)"/> */}
+      {/* </PageWindowTopBar> */}
       <PageWindowContent>
         {children}
       </PageWindowContent>

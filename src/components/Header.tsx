@@ -65,7 +65,7 @@ const HeaderLogo = styled.p`
 `
 
 const HeaderLogoMain = styled.span`
-  color: var(--colors-yellow);
+  color: var(--colors-green);
 `
 const HeaderLogoSub = styled.span`
   color: var(--colors-purple);

@@ -3,9 +3,7 @@
 
 export type ExternalPostItem = {
   title: string
-  contentSnippet: string
   link: string
   isoDate: string
-  dateMiliSeconds: number
   sourceType: string
 }

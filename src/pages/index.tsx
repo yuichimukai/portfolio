@@ -32,6 +32,7 @@ const Home: NextPage<Props> = (props) => {
           <SectionTitle>Experience</SectionTitle>
           <PlainText>2021.8 Worked at medpeer, as intern</PlainText>
           <PlainText>2021.3〜5 Worked at weseek.inc, as a part time job</PlainText>
+          <PlainText>2020.11〜12 Worked at Port.inc, as a part time job</PlainText>
         </ContentSection>
         <ContentSection>
           <SectionTitle>Language・Tools</SectionTitle>
@@ -46,10 +47,10 @@ const Home: NextPage<Props> = (props) => {
             ]}
           />
         </ContentSection>
-        {/* <ContentSection> */}
-          {/* <SectionTitle>Recent activities</SectionTitle>
+        <ContentSection>
+          <SectionTitle>Recent activities</SectionTitle>
           <ExternalPostList posts={posts}/>
-        </ContentSection> */}
+        </ContentSection>
       </BrowserWindow>
       <Footer/>
     </BasicLayout>
