@@ -13,7 +13,7 @@ export const Meta: React.VFC<Props> = (props) => {
   const { title, description, image, type, favicon, children } = props;
   return (
     <Head>
-      <title>{title ? `${title} - fujishima.dev` : `Yuichi Mukai's Portfolio`}</title>
+      <title>{title ? `${title} - yuichi.dev` : `Yuichi Mukai's Portfolio`}</title>
       <meta
         name="description"
         content={description ? `${description}` : "向井優一のポートフォリオサイトです"}
