@@ -14,7 +14,11 @@ export const ChangeThemeButton: VFC = () => {
         aria-label="DarkModeToggle"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
-        {mounted && <>{theme === "dark" ? <HalfMoon /> : <SunLight />}</>}
+        {mounted && (
+          <>
+            {theme === "dark" ? <HalfMoon fr={name} /> : <SunLight fr={name} />}
+          </>
+        )}
       </button>
     </>
   );
