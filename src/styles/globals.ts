@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 :root {
@@ -61,7 +61,6 @@ export const GlobalStyle = createGlobalStyle`
 
 html,
 body {
-  background: var(--colors-navy);
   height: 100%;
   padding: 0;
   margin: 0;
@@ -81,4 +80,4 @@ a, a:visited {
 * {
   box-sizing: border-box;
 }
-`
+`;

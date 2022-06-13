@@ -1,38 +1,35 @@
-import styled from 'styled-components'
-import { Header } from '@/components/Header'
-import { DEAFULT_HEADER_HEIGHT } from '@/utils/constants'
-import { media } from '@/styles'
+import styled from "styled-components";
+import { Header } from "@/components/Header";
+import { DEAFULT_HEADER_HEIGHT } from "@/utils/constants";
+import { media } from "@/styles";
 
 type Props = {
-  children: [React.ReactChild, ...React.ReactChild[]]
-}
+  children: [React.ReactChild, ...React.ReactChild[]];
+};
 
 export const SideBarLayout: React.VFC<Props> = (props) => {
   // childrenの順序に依存しているので注意(sidebarをchildrenの0番目で使うする必要がある)
   // 他の方法としては子要素にkeyをつけて制御する(hack気味)
-  const { children: [sidebar, ...rest] } = props;
+  const {
+    children: [sidebar, ...rest],
+  } = props;
   return (
     <SideBarLayoutBase>
       <FixedHeader>
-        <Header/>
+        <Header />
       </FixedHeader>
       <PageContent>
-        <MainContentArea>
-          { rest }
-        </MainContentArea>
-        <SideBarArea>
-          { sidebar }
-        </SideBarArea>
+        <MainContentArea>{rest}</MainContentArea>
+        <SideBarArea>{sidebar}</SideBarArea>
       </PageContent>
     </SideBarLayoutBase>
-  )
-}
+  );
+};
 
 const SideBarLayoutBase = styled.div`
   height: 100%;
   position: relative;
-  background-color: var(--colors-navy);
-`
+`;
 
 const FixedHeader = styled.div`
   z-index: 10;
@@ -42,7 +39,7 @@ const FixedHeader = styled.div`
   top: 0;
   right: 0;
   left: 0;
-`
+`;
 
 const PageContent = styled.div`
   padding: ${DEAFULT_HEADER_HEIGHT}px var(--spacing-3) 0;
@@ -59,7 +56,7 @@ const PageContent = styled.div`
   ${media.phone`
     padding: ${DEAFULT_HEADER_HEIGHT}px var(--spacing-2) 0; 
   `}
-`
+`;
 
 const MainContentArea = styled.div`
   flex-grow: 1;
@@ -71,7 +68,7 @@ const MainContentArea = styled.div`
     width: 100%;
     max-width: 100%;
   `}
-`
+`;
 
 const SideBarArea = styled.div`
   min-width: var(--width-2-colums-sub);
@@ -82,4 +79,4 @@ const SideBarArea = styled.div`
     width: 100%;
     max-width: 100%;
   `}
-`
+`;
