@@ -7,7 +7,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   usePageView();
   return (
     <>
-      <ThemeProvider attribute="class" defaultTheme="light">
+      <ThemeProvider attribute="class" defaultTheme="dark">
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
