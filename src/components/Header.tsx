@@ -5,7 +5,7 @@ import { media } from "@/styles/utils/helper";
 import { LinkItems } from "@/utils/links";
 import { SnsIconList } from "./SnsIconList";
 import Link from "next/link";
-import { ChangeThemeButton } from "./ChangeThemeButton";
+// import { ChangeThemeButton } from "./ChangeThemeButton";
 
 type Props = {};
 
@@ -20,9 +20,9 @@ export const Header: React.VFC<Props> = () => {
               <HeaderLogoSub>.dev</HeaderLogoSub>
             </HeaderLogo>
           </Link>
-          <span className="group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2">
-            <ChangeThemeButton />
-          </span>
+          {/* <span className="group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2"> */}
+          {/* <ChangeThemeButton /> */}
+          {/* </span> */}
           <SnsIconList />
         </HeaderTop>
         <HeaderNav>
@@ -39,6 +39,7 @@ export const Header: React.VFC<Props> = () => {
 
 const HeaderBase = styled.div`
   width: 100%;
+  background-color: var(--colors-navy);
   border-bottom: var(--border-size-1) solid var(--colors-dark-gray);
 `;
 

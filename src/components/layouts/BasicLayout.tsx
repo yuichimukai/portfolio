@@ -24,6 +24,7 @@ export const BasicLayout: React.VFC<Props> = (props) => {
 const BasicLayoutBase = styled.div`
   height: 100%;
   position: relative;
+  background-color: var(--colors-navy);
 `;
 
 const FixedHeader = styled.div`

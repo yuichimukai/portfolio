@@ -27,6 +27,7 @@ export const SideBarLayout: React.VFC<Props> = (props) => {
 };
 
 const SideBarLayoutBase = styled.div`
+  background-color: var(--colors-navy);
   height: 100%;
   position: relative;
 `;
