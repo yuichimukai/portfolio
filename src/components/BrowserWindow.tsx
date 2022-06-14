@@ -21,6 +21,7 @@ export const BrowserWindow: React.VFC<Props> = (props) => {
 const PageWindowBase = styled.div`
   width: 100%;
   height: 100%;
+  background-color: var(--colors-black);
   border-radius: 3px;
   overflow-y: scroll;
 `;
