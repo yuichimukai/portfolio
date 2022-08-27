@@ -1,33 +1,41 @@
-import styled from 'styled-components'
-import { TwitterIcon } from '@/components/icons/TwitterIcon'
-import { GitHubIcon } from '@/components/icons/GitHubIcon'
+import styled from "styled-components";
+import { TwitterIcon } from "@/components/icons/TwitterIcon";
+import { GitHubIcon } from "@/components/icons/GitHubIcon";
 
-type Props = {}
+type Props = {};
 
 export const SnsIconList: React.VFC<Props> = () => {
   return (
     <IconListBase>
       <IconListItem>
-        <a href="https://twitter.com/MukaiYuichi" target="_blank" rel="noopener">
-          <TwitterIcon fill="var(--colors-gray)" hoverFill="var(--colors-white)" size="sm"/>
+        <a href="https://twitter.com/devyuichi" target="_blank" rel="noopener">
+          <TwitterIcon
+            fill="var(--colors-gray)"
+            hoverFill="var(--colors-white)"
+            size="sm"
+          />
         </a>
       </IconListItem>
       <IconListItem>
         <a href="https://github.com/yuichimukai" target="_blank" rel="noopener">
-          <GitHubIcon fill="var(--colors-gray)" hoverFill="var(--colors-white)" size="sm"/>
+          <GitHubIcon
+            fill="var(--colors-gray)"
+            hoverFill="var(--colors-white)"
+            size="sm"
+          />
         </a>
       </IconListItem>
     </IconListBase>
-  )
-}
+  );
+};
 
 const IconListBase = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-`
+`;
 
 const IconListItem = styled.li`
   margin-left: var(--spacing-2);
-`
+`;

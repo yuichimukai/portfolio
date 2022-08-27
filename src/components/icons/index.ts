@@ -12,3 +12,5 @@ export * from "./PersonIcon";
 export * from "./TwitterIcon";
 export * from "./RailsIcon";
 export * from "./RubyIcon";
+export * from "./NestIcon";
+export * from "./GraphQLIcon";

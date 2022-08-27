@@ -8,5 +8,7 @@ export const skills = [
   "Vercel",
   "Docker",
   "Ruby",
-  "Rails"
+  "Rails",
+  "Nest",
+  "GraphQL",
 ] as const;

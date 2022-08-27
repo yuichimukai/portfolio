@@ -61,6 +61,8 @@ const Home: NextPage<Props> = (props) => {
               "TypeScript",
               "React",
               "Next",
+              "Nest",
+              "GraphQL",
             ]}
           />
         </ContentSection>

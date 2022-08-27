@@ -17,7 +17,7 @@ export const Header: React.VFC<Props> = () => {
           <Link href="/">
             <HeaderLogo>
               <HeaderLogoMain>Yuichi</HeaderLogoMain>
-              <HeaderLogoSub>.dev</HeaderLogoSub>
+              <HeaderLogoSub>.devIO</HeaderLogoSub>
             </HeaderLogo>
           </Link>
           {/* <span className="group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2"> */}
