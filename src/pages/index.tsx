@@ -32,7 +32,7 @@ const Home: NextPage<Props> = (props) => {
           <SectionTitle>Profile</SectionTitle>
           <PlainText>
             Hi, I'm Yuichi Mukai, a junior web engineer interested in backend
-            development and DevOps.
+            and Infrastructure development.
           </PlainText>
           <PlainText>
             I belong to the Faculty of Agriculture of Meiji University.
