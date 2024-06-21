@@ -11,7 +11,7 @@
   ],
   "labels": ["renovate"],
   "rangeStrategy": "bump",
-  "branchConcurrentLimit": 7,
+  "prConcurrentLimit": 7,
   "prHourlyLimit": 0,
   "packageRules": [
     {
