@@ -36,7 +36,7 @@
     "react-twemoji": "^0.3.0",
     "sass": "^1.32.8",
     "tailwindcss": "^3.1.2",
-    "ts-jest": "^26.5.5"
+    "ts-jest": "^26.5.6"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^10.2.2",
