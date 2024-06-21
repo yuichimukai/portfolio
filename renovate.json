@@ -21,6 +21,7 @@
   ],
   "baseBranches": ["main"],
   "automerge": true,
+  "platformAutomerge": true,
   "autoApprove": true,
   "automergeType": "pr",
   "ignorePaths": [
