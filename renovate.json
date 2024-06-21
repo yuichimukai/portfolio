@@ -1,19 +1,29 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    "group:allNonMajor",
+    "group:definitelyTyped"
   ],
   "timezone": "Asia/Tokyo",
   "enabledManagers": [
-    "github-actions",
     "npm"
   ],
+  "labels": ["renovate"],
   "rangeStrategy": "bump",
+  "branchConcurrentLimit": 7,
   "prHourlyLimit": 0,
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "minor"],
       "excludePackageNames": ["typescript"]
     }
+  ],
+  "baseBranches": ["main"],
+  "automerge": true,
+  "autoApprove": true,
+  "automergeType": "pr",
+  "ignorePaths": [
+    "**/node_modules/**"
   ]
 }
