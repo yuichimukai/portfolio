@@ -3,7 +3,6 @@
   "extends": [
     "config:recommended"
   ],
-  "schedule": "every hour",
   "timezone": "Asia/Tokyo",
   "enabledManagers": [
     "github-actions",
