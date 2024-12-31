@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "run-s build:posts build:next",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
-    "build:next": "next build",
+    "build:next": "NODE_OPTIONS='--openssl-legacy-provider' next build",
     "start": "next start",
     "test": "jest",
     "test:coverage": "jest --collect-coverage",
