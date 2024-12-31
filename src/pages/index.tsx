@@ -35,11 +35,14 @@ const Home: NextPage<Props> = (props) => {
             and Infrastructure development.
           </PlainText>
           <PlainText>
-            I belong to the Faculty of Agriculture of Meiji University.
+            I graduated to the Faculty of Agriculture of Meiji University.
           </PlainText>
         </ContentSection>
         <ContentSection>
           <SectionTitle>Experience</SectionTitle>
+          <PlainText>
+            2023.11~ Worked at toridori.inc, as a full-time employee
+          </PlainText>
           <PlainText>
             2022.7〜 Worked at toridori.inc, as a part time job
           </PlainText>
